@@ -81,6 +81,6 @@ summary(regresion)
 #   Coeficiente de Correlacion de Pearson (r)
 #-----------------------------------------------
 
-sqrt(0.5456)
+sqrt(0.4385)
 
 
