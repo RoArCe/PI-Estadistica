@@ -54,5 +54,59 @@ penguins$isla
 #y van a describir los tipos de variables.
 #dim() y str()
 
+#---------------------------
+#matriz 1
+#---------------------------
 
-install.packages("iris")
+install.packages("datos")
+library(datos)
+
+iris<-datos::flores
+dim(iris)
+
+str(iris)
+
+iris$Especie
+iris$Ancho.Sepalo
+
+#--------------------------------------
+#grafico de barras
+#--------------------------------------
+
+#2.- Creación del gráfico
+GB2<-ggplot(iris, aes(x=Especie))+
+  geom_bar()+
+  ggtitle("Gráfico de Barras")+
+  xlab("Especie")+
+  ylab("Ancho Sepalo")+
+  theme_minimal()
+
+GB2
+
+
+#--------------------------
+#matriz 2
+#--------------------------
+
+clim<-datos::clima
+dim(clim)
+
+str(clim)
+
+clim$hora
+clim$dia
+
+#--------------------------------------
+#grafico de barras
+#--------------------------------------
+
+#2.- Creación del gráfico
+GB3<-ggplot(clim, aes(x=hora))+
+  geom_bar()+
+  ggtitle("Gráfico de Barras")+
+  xlab("Hora")+
+  ylab("Dia")+
+  theme_minimal()
+
+GB3
+
